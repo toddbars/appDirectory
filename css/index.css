@@ -1,0 +1,182 @@
+
+.banner{
+width: 100%;
+background-color: #4F5EB8;
+padding: 15px;
+padding-left: 75px;
+}
+
+#logo{
+width: 200px;
+margin: 0,auto;
+}
+
+p{
+font-size: 12px;
+}
+
+h1{
+color: #4F5EB8 ;
+font-size: 25px;
+text-align: left;
+}
+
+#result a{
+color: #4F5EB8;
+}
+
+#result a:hover{
+text-decoration: none;
+color: #5B49DC;
+}
+
+#result a:visited {
+text-decoration: none;
+color: #5B49DC;
+}
+
+h2{
+color: #4A5AC5;
+font-size: 30px;
+text-align: center;
+}
+
+h3{
+color: #707070;
+font-size: 18px;
+text-align: left;
+}
+
+h4{
+color: #707070;
+font-size: 14px;
+text-align: center;
+}
+
+/*
+.nav{
+list-style:none;
+margin:0;
+padding:0;
+padding-top: 20px;
+text-align:center;
+      }
+
+.nav li{
+display:inline;
+padding:8px;
+}
+
+.nav li button {
+-webkit-border-radius: 7;
+-moz-border-radius: 7;
+border-radius: 7px;
+color: #ffffff;
+font-size: 12px;
+background: #77BC58;
+padding: 5px 8px 5px 8px;
+margin-top: 10px;
+text-decoration: none;
+}
+
+.nav li button:hover {
+background: #65A04F;
+text-decoration: none;
+}
+*/
+.dropdown{
+margin: 0;
+text-align: center;
+}
+
+.btn-primary{
+background-color: #5360AD;
+border: 0px;
+}
+
+.btn-primary:hover{
+background-color: #5B49DC;
+border: 0px;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+background-color: #5B49DC;
+border: 0px;
+
+}
+
+.dropdown-menu{
+    left: 45% !important;
+    margin-left: -50px;
+}
+
+.dropdown-menu li{
+padding: 10px;
+    cursor: pointer;
+}
+
+#title{
+margin-top: 50px;
+}
+
+.list-group-item:first-child{
+  border-top-left-radius:25px;
+border-top-right-radius:25px;
+  border-radius: 25px;
+}
+
+.list-group-item{
+display:inline-block;
+vertical-align: top;
+float: left;
+width: 80%;
+border: 0px;
+background-color: #F5F5F5;
+margin: 20px;
+margin-left: 10%;
+border-radius: 25px;
+
+}
+
+.hide{
+display: none;
+}
+
+.show{
+display: block;
+}
+
+#result {
+width: 100%;
+margin-top: 100px;
+overflow-y: auto;
+box-sizing: border-box;
+z-index: 1001;
+-webkit-padding-start: 0px !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+    .hero{
+        background-image: url(../images/product-integrations-fully-integrated.png);
+         background-size: 60%;
+        height: 500px;
+        background-repeat: no-repeat;
+            background-attachment: fixed;
+    background-position: center top;
+    }

@@ -2,215 +2,32 @@
 
 <!DOCTYPE html>
 <html>
- <head>
-     
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KGXMPRS');</script>
-<!-- End Google Tag Manager -->
-     
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110721359-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
 
-  gtag('config', 'UA-110721359-1');
-</script>
-  <title>Infusionsoft Integrations | Search for new apps </title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGXMPRS');</script>
+        <!-- End Google Tag Manager -->
 
-.banner{
-width: 100%;
-background-color: #4F5EB8;
-padding: 15px;
-padding-left: 75px;
-}      
-      
-#logo{
-width: 200px;
-margin: 0,auto;
-}
-      
-p{
-font-size: 12px;   
-}
-      
-h1{
-color: #4F5EB8 ;
-font-size: 25px;  
-text-align: left; 
-}  
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110721359-1"></script>
+          <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-#result a{
-color: #4F5EB8;
-}
-      
-#result a:hover{
-text-decoration: none;
-color: #5B49DC; 
-}
-      
-#result a:visited {
-text-decoration: none;
-color: #5B49DC; 
-}
-      
-h2{
-color: #4A5AC5;
-font-size: 30px;  
-text-align: center;        
-}
- 
-h3{
-color: #707070;
-font-size: 18px;
-text-align: left;
-}
-      
-h4{
-color: #707070;
-font-size: 14px;
-text-align: center;
-}
-      
-/*
-.nav{         
-list-style:none;
-margin:0;
-padding:0;
-padding-top: 20px;
-text-align:center;
-      }
-      
-.nav li{
-display:inline;
-padding:8px;
-}
-          
-.nav li button {
--webkit-border-radius: 7;
--moz-border-radius: 7;
-border-radius: 7px;
-color: #ffffff;
-font-size: 12px;
-background: #77BC58;
-padding: 5px 8px 5px 8px;
-margin-top: 10px;
-text-decoration: none;
-}
-
-.nav li button:hover {
-background: #65A04F;
-text-decoration: none;
-}
-*/ 
-.dropdown{
-margin: 0; 
-text-align: center;
-}
-      
-.btn-primary{      
-background-color: #5360AD;
-border: 0px;
-}
-
-.btn-primary:hover{      
-background-color: #5B49DC;
-border: 0px;
-}
-
-.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
-background-color: #5B49DC;
-border: 0px;   
-    
-}
-      
-.dropdown-menu{
-    left: 45% !important;
-    margin-left: -50px;
-}
-      
-.dropdown-menu li{
-padding: 10px;
-    cursor: pointer;
-}  
-      
-#title{     
-margin-top: 50px;   
-}
-
-.list-group-item:first-child{
-  border-top-left-radius:25px;
-border-top-right-radius:25px;
-  border-radius: 25px;        
-}  
-    
-.list-group-item{
-display:inline-block;
-vertical-align: top;
-float: left;
-width: 80%;
-border: 0px;
-background-color: #F5F5F5;
-margin: 20px;
-margin-left: 10%;
-border-radius: 25px;
-
-}
-    
-.hide{
-display: none;
-}
-      
-.show{
-display: block;
-}
-      
-#result {
-width: 100%;
-margin-top: 100px;
-overflow-y: auto;
-box-sizing: border-box;
-z-index: 1001;
--webkit-padding-start: 0px !important;
-}
-   
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-}
-    .hero{
-        background-image: url(product-integrations-fully-integrated.png);
-         background-size: 60%;
-        height: 500px;
-        background-repeat: no-repeat;
-            background-attachment: fixed;
-    background-position: center top;
-    }
-</style>
+          gtag('config', 'UA-110721359-1');
+        </script>
+          <title>Infusionsoft Integrations | Search for new apps </title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="json/appInfo.json"></script>
+          <link rel="stylesheet" href="css/index.css" />
 </head>
-    
 <body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGXMPRS"
@@ -221,10 +38,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      </div>
   <div class="container" style="width:80%;">
       <div class="hero"><div class="row"> <div style="margin-top: 430px; background-color: #fff;"><h2>Finding relevant applications is now quick and easy!</h2>
-      <div style="width: 50%; text-align: center; margin: 0 auto; padding-top: 30px;"><p>Getting the information you need on developer apps is now quicker and easier. You can search by relevant terms, industry verticals, and application descriptions. Find out how to get a discounted app for yourself and pricing information. </p></div>          
+      <div style="width: 50%; text-align: center; margin: 0 auto; padding-top: 30px;"><p>Getting the information you need on developer apps is now quicker and easier. You can search by relevant terms, industry verticals, and application descriptions. Find out how to get a discounted app for yourself and pricing information. </p></div>
       </div>
-          
-      <div class="row"> 
+
+      <div class="row">
           <div class="col-md-5">
               <div id="title">
                 <h2 align="left">App Search</h2>
@@ -233,7 +50,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select a Vertical
                     <span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                <li id="myAllLink">View All </li>                          
+                                <li id="myAllLink">View All </li>
                                 <li id="myStoreLink">Online Stores </li>
                                 <li id="myFitnessLink">Health and fitness</li>
                                 <li id="myServicesLink">Local Services</li>
@@ -243,990 +60,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li id="myRealestateLink">Realestate</li>
                                 <li id="myProfessionalLink">Professional Services</li>
                             </ul>
-                </div>  
+                </div>
              </div>
         </div>
          <!-- searchbar -->
         <div class="col-md-7">
                 <input style="margin-top:100px;"type="text" name="search" id="search" placeholder="Enter Search Here" class="form-control" />
-                <h4 align="center">Search by app name, type, or vertical. </h4>  
+                <h4 align="center">Search by app name, type, or vertical. </h4>
         </div>
       </div>
     </div>
 <!-- Results -->
 <ul class="" id="result"></ul>
     <div style="padding-top: 30px;"></div>
-    
+
     <!-- leave feedback button -->
     <a href="https://goo.gl/forms/lJNmNxPdo4UbOWMB3" target="_blank"> <button type="button" class="btn btn-primary" style="position: fixed; position: fixed; bottom: 5px; right: 10px; ">Leave feedback</button></a>
       </div>
     </div>
 </body>
 </html>
+
 <script>
-var datajson = [
-  {
-    "name": "AccessAlly",
-    "email": "your@ambitionally.com",
-    "short": "All-in-one membership and LMS solution for Wordpress sites",
-    "link": "https://marketplace.infusionsoft.com/listing/ambitionally-accessally",
-    "price": "Variable, $79-99 per month",
-    "affiliate link": "https://ambitionally.com/become-ambassador/",
-    "type": "Membership",
-    "verticals": "Online Learning",
-    "trial": "No",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Acutrack",
-    "email": "apervez@acutrack.com",
-    "short": "Fulfillment & Printing Services",
-    "link": "https://marketplace.infusionsoft.com/listing/acutrack-inc-product-fulfillment-services-by-acutrack",
-    "price": "FREE APP",
-    "discount": "We offer a referral program. Please check with Jeremiah",
-    "video": "https://www.acutrack.com/our-solutions/publishing.html",
-    "type": "Fulfillment",
-    "verticals": "Coach & consulting, Online Learning",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "AffiliateDash",
-    "email": "service@fuseomatic.com",
-    "short": "Customize the Infusionsoft Referral Partner portal with your company branding, including your URL tracking link. Easy social sharing.",
-    "link": "https://marketplace.infusionsoft.com/listing/fuseomatic-llc-affiliatedash",
-    "price": "$29/mo",
-    "discount": "Free",
-    "claim": "http://www.affiliatedash.com/partners/",
-    "video": "http://www.affiliatedash.com/partners/",
-    "affiliate link": "http://www.affiliatedash.com/partners/",
-    "type": "Infusionsoft Add on tools, Affiliate Marketing",
-    "verticals": "Online store, Coach & consulting",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "AnalyticsConnect.io",
-    "email": "help@analyticsconnect.io",
-    "short": "Get Infusionsoft sales data into Google Analytics, AdWords, Facebook, and Bing.",
-    "link": "https://marketplace.infusionsoft.com/listing/analyticsconnect.io-analyticsconnect",
-    "price": "$14.95 per month",
-    "discount": "Free 15 Day Trial & Free Support",
-    "claim": "Call (888) 288-2178",
-    "video": "https://www.youtube.com/watch?v=Ty5EbW-DX9Q",
-    "affiliate link": "Call Us (888) 288-2178",
-    "type": "Ecommerce, Infusionsoft Add on tools, Lead Gen",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Appointmentcore",
-    "email": "Danielle@appointmentcore.com",
-    "short": "Automated scheduling software, integrated with Infusionsoft, Google Calendar, and Outlook. ",
-    "link": "https://marketplace.infusionsoft.com/listing/automationcore-appointmentcore",
-    "price": "Tiered pricing",
-    "discount": "FREE + access to beta features; plus earn referral rewards as an Affiliate",
-    "claim": "Email Danielle (danielle@appointmentcore.com)",
-    "video": "Coming soon ",
-    "affiliate link": "Coming soon",
-    "type": "Appointment Booking",
-    "verticals": "Local services, Coach & consulting, Health and Fitness, Medical and Dental, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": " "
-  },
-  {
-    "name": "BridgeBuddy",
-    "email": "service@fuseomatic.com",
-    "short": "Sync data between MindBody Online and Infusionsoft. ",
-    "link": "https://marketplace.infusionsoft.com/listing/fuseomatic-llc-mindbuddy",
-    "price": "$59/mo",
-    "discount": "N/A",
-    "affiliate link": "https://fuseomatic.com/partners/",
-    "type": "Infusionsoft Add on tools, Bridge Integration",
-    "verticals": "Health and Fitness, Medical and Dental, MindBody Online users",
-    "trial": "No",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Call Loop",
-    "email": "Chris@CallLoop.com",
-    "short": "Call Loop helps Infusionsoft users add voice broadcasting, ringless voicemail, and text messaging into their marketing campaigns.",
-    "link": "https://marketplace.infusionsoft.com/listing/call-loop-call-loop-sms-text-voice-broadcasting",
-    "price": "5¢/msg",
-    "discount": "10% discount",
-    "claim": "Reach out to our team at support@CallLoop.com ",
-    "video": "https://www.CallLoop.com",
-    "affiliate link": "https://www.callloop.com/partners/affiliates",
-    "type": "Appointment Booking, Text, Lead Gen",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "CartRover",
-    "email": "info@cartrover.com",
-    "short": "CartRover provides pre-built integrations between shopping carts and order management and warehouse management systems.",
-    "link": "https://marketplace.infusionsoft.com/listing/cartrover-cartrover",
-    "price": "$30 /month",
-    "discount": "Second Month Free",
-    "claim": "Contact help@cartrover.com and let them know you're an Infusionsoft Partner",
-    "video": "https://vimeo.com/205267178",
-    "type": "Ecommerce, Shipping, integration",
-    "verticals": "Online store",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "CheckMeOut",
-    "email": "service@fuseomatic.com",
-    "short": "CheckMeOut is a service that designs custom Infusionsoft shopping cart themes that look good, are mobile-responsive, and match your site.",
-    "link": "https://marketplace.infusionsoft.com/listing/fuseomatic-llc-checkmeout",
-    "price": 597,
-    "discount": "We can offer 20% discount on design for ICPs.",
-    "claim": "Shoot us an email to service@fuseomatic.com",
-    "affiliate link": "www.fuseomatic.com/partners",
-    "type": "Ecommerce",
-    "verticals": "Online store",
-    "trial": "No",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Cloud Backup",
-    "email": "info@novaksolutions.com",
-    "short": "Fat-Finger Insurance for Infusionsoft accounts. Browse Infusionsoft data history and fix data mistakes with just a few clicks.",
-    "link": "https://marketplace.infusionsoft.com/listing/novak-solutions-cloud-backup",
-    "price": "$69 / month",
-    "discount": "ICPs can receive CloudBackup for free",
-    "claim": "https://novaksolutions.com/partners",
-    "video": "https://novaksolutions.wistia.com/medias/43v77mm0yk#",
-    "affiliate link": "https://novaksolutions.com/partners",
-    "type": "Infusionsoft Add on tools",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Cloud Cart Connector",
-    "email": "support@jmawebtechnologies.com",
-    "short": "Our software syncs orders, products, customers and inventory between Infusionsoft and Quickbooks Online.  Save time and ensure accuracy!  ",
-    "link": "www.cloudcartconnector.com",
-    "price": "$49 - $99 per month, based on number of connections and yearly orders",
-    "discount": "First Month Free ",
-    "claim": "Mention this marketplace",
-    "video": "http://www.jmawebtechnologies.com/platforms/infusionsoft-quickbooks-integration-sync",
-    "type": "Ecommerce, Infusionsoft Add on tools, Accounting",
-    "verticals": "Online store, Accounting Professionals",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "CloudLink Ultimate",
-    "email": "bkappus@cloudlinkerp.com",
-    "short": "Used to manage scheduling, dispatching, jobs, inventory and products, but I think Partners will enjoy the project management functionality and the integration into Infusionsoft the most.",
-    "link": "https://marketplace.infusionsoft.com/listing/cloudlink-solutions-cloudlink-ultimate",
-    "price": "$279/m",
-    "discount": "The price for Partners is $100.00 per month, unlimited users. Normal app price is $279.00 per month AND if you resell just one CloudLink Ultimate application, you can have your app for free!",
-    "claim": "Visit http://cloudlinkerp.com/infusionsoft/, fill out the form and tell me you are an ICP. We'll get you a special link and get you started.",
-    "type": "productivity, project managment, ",
-    "verticals": "Online store, Online Learning, Health and Fitness, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Connex For QuickBooks",
-    "email": "support@jmawebtechnologies.com",
-    "short": "Our software syncs orders, products, inventory and customers between Infusionsoft and all versions of QuickBooks Desktop.  ",
-    "link": "www.connexforquickbooks.com",
-    "price": "$49 - $99 per month based on cumber of connections and number of yearly orders",
-    "discount": "First Month Free ",
-    "claim": "Mention this marketplace",
-    "video": "http://www.jmawebtechnologies.com/platforms/infusionsoft-quickbooks-integration-sync",
-    "type": "Ecommerce, Accounting",
-    "verticals": "Online store, Professional Services, Accounting Professionals",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "ConvertFlow",
-    "email": "jonathan@convertflow.com",
-    "short": "Guide people on your website to become leads, customers and repeat buyers, with personalized calls-to-action targeted by Infusionsoft data",
-    "link": "https://marketplace.infusionsoft.com/listing/convertflow-convertflow",
-    "price": "Free",
-    "discount": "Get 3 months of the Lite plan for free",
-    "claim": "Use this special link - https://app.convertflow.com/billing?plan_id=lite49&promo_code=icpfree&discount_type=amount&coupon_expire=3&discount_preview=49",
-    "video": "https://convertflow.wistia.com/medias/m9wpuwohmy",
-    "affiliate link": "http://help.convertflow.com/article/154-how-to-join-the-convertflow-referral-program",
-    "type": "Ecommerce, Lead Gen, On-site retargeting / website personalization",
-    "verticals": "Online store, Coach & consulting, Online Learning, Professional Services, Software / agencies / marketing consultants",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Data Migration and Import",
-    "email": "partners.data2crm@magneticone.com",
-    "short": "Data2CRM.Migration - online tool that helps migrate the CRM data from various CRM platforms to Infusionsoft accurately & securely",
-    "link": "https://marketplace.infusionsoft.com/listing/crmone-data2crm.migration",
-    "price": "Tiered pricing",
-    "discount": "1 performed migration\t5% discount\n5 performed migrations\t10% discount\n10 performed migrations\t15% discount\n15 performed migrations\t20% discount\n20 performed migrations\t25% discount\n50 performed migrations\t30% discount",
-    "claim": "Discount for the automatic migration will be set automatically for the Parnter's Account in Data2CRM system. For the custum migration discount will be set be partner manager.",
-    "video": "https://www.youtube.com/watch?v=97YsC0AF7O4&t=1s",
-    "affiliate link": "https://www.data2crm.com/migration/partner-program/affiliate-program/",
-    "type": "data migration",
-    "verticals": "ant CRM systems users",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "DynamicSync",
-    "email": "support@dynamicsync.com",
-    "short": "Manage events centrally on DS with Infusionsoft capabilities and integration with partners such as GoToWebinar, GoToMeeting, Zoom and WordPress. Ability to handle recurring events and manage guest registrations. Features such as Pre-Built Campaigns, Ticket Scanning App, WordPress Plugin and Shortcode Builder.",
-    "link": "https://marketplace.infusionsoft.com/listing/parallel-software-dynamicsync-for-event-management",
-    "price": "$19.95/m",
-    "discount": "Free DynamicSync Account & Commision Program",
-    "claim": "email support@dynamicsync.com to request an app",
-    "type": "event booking, lead gen, worpress",
-    "verticals": "Local services, Coach & consulting, Online Learning, Health and Fitness, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "emailAttacher",
-    "email": "support@emailattacher.com",
-    "short": "Provides a method to attach your personal outbound emails to the contact record of the addressee using a bcc address",
-    "link": "http://emailattacher.com",
-    "price": "$5/m",
-    "discount": "Free unlimited account available to partners who sell Infusionsoft and/or offer Infusionsoft consulting services as a central part of their business.",
-    "claim": "Send an email to support@emailattacher.com",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Event Espresso",
-    "email": "seth@eventespresso.com",
-    "short": "Event registration and ticketing management plugin for WordPress powering over 40,000 event websites; $100 million in ticket sales per year!",
-    "link": "https://eventespresso.com/",
-    "price": 79.95,
-    "video": "https://eventespresso.wistia.com/medias/5mlm2kdpzt",
-    "type": "Appointment Booking",
-    "verticals": "Coach & consulting, Online Learning, Health and Fitness",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "FeedBolt",
-    "email": "love@fusedeskpartners.com",
-    "short": "FeedBolt - RSS to Email for Infusionsoft",
-    "link": "https://marketplace.infusionsoft.com/listing/asandia-corp.-feedbolt",
-    "price": "$29/mo+",
-    "discount": "Free App for ICPs!",
-    "claim": "Enroll at https://fusedeskpartners.com/",
-    "video": "https://vimeo.com/176215002",
-    "affiliate link": "https://fusedeskpartners.com/",
-    "type": "Infusionsoft Add on tools, Membership, Lead Gen, Marketing",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "FixYourFunnel",
-    "email": "Live chat on site, call/text business line at 760-621-8199",
-    "short": "Improved marketing and sales automation through phone and SMS integration with Infusionsoft. ",
-    "link": "https://marketplace.infusionsoft.com/listing/fix-your-funnel-fix-your-funnel-sms",
-    "price": "$49/m",
-    "discount": "Free \"Ultimate Media\" account. ICP only pays for SMS/phone minutes used. ",
-    "claim": "Notify support by live chat, phone or text and then sign up for the $1 trial and we will give you $20 in credits plus no monthly fee ($124/mo value)",
-    "type": "text, sms, call, auto dialer",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Fomo",
-    "email": "ryan@usefomo.com",
-    "short": "The online equivalent of a busy store.",
-    "link": "https://marketplace.infusionsoft.com/listing/fomo-fomo",
-    "price": 29,
-    "discount": 35,
-    "claim": "Become a Fomo Partner",
-    "video": "https://www.usefomo.com/video-guides",
-    "affiliate link": "https://partners.usefomo.com",
-    "type": "Ecommerce, Infusionsoft Add on tools, Lead Gen",
-    "verticals": "Online store, Online Learning",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "FormLift",
-    "email": "info@formlift.net",
-    "short": "FormLift is the simple solution to integrating Infusionsoft web forms with your WordPress Website",
-    "link": "https://marketplace.infusionsoft.com/listing/training-business-pros-digital-marketing-services-division-custom-wordpress-plugin-styles-infusionsoft-forms-makes-them-responsive",
-    "price": "$7/month",
-    "discount": "Free",
-    "claim": "https://formlift.net/partner-extension/",
-    "video": "https://vimeo.com/245092055",
-    "affiliate link": "https://formlift.net/affiliate-sign-up/",
-    "type": "Infusionsoft Add on tools, Lead Gen, WordPress",
-    "verticals": "Uses WordPress",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Fortapay",
-    "email": "service@fuseomatic.com",
-    "short": "Customer billing portal for Infusionsoft. Customers can easily see billing history, pay invoices, and update credit cards on subscriptions.",
-    "link": "https://marketplace.infusionsoft.com/listing/fuseomatic-llc-fortapay",
-    "price": "$29/mo",
-    "discount": "Free",
-    "claim": "https://www.fortapay.com/partners/",
-    "video": "https://www.youtube.com/watch?v=v5G2NbG4JEY",
-    "affiliate link": "https://www.fortapay.com/partners/",
-    "type": "Infusionsoft Add on tools, Accounting, Billing and Invoicing Portal",
-    "verticals": "Local services, Coach & consulting",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "FuseDesk",
-    "email": "love@fusedeskpartners.com",
-    "short": "FuseDesk - THE Help Desk Add-On for Infusionsoft",
-    "link": "https://marketplace.infusionsoft.com/listing/asandia-corp.-fusedesk",
-    "price": "$39/mo+",
-    "discount": "Free App, Unlimited Reps/Departments, 100 Free Cases",
-    "claim": "Enroll at https://fusedeskpartners.com/",
-    "video": "https://www.youtube.com/watch?v=4HUCJMpoTrE",
-    "affiliate link": "https://fusedeskpartners.com/",
-    "type": "Infusionsoft Add on tools, Membership, Help Desk",
-    "verticals": "Online store, Local services, Online Learning, Health and Fitness, Medical and Dental",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Genie File2Box",
-    "email": "denni.griffith@gmail.com",
-    "short": "Allows contacts to self-serve upload files of any extension type to their Infusionsoft Contact record & apply a tag during the process.",
-    "link": "https://marketplace.infusionsoft.com/listing/marketing-efficiency-consultants-genie-file2box",
-    "price": 9.95,
-    "discount": "Free Account for ICP Sandbox when they become a free Affiliate",
-    "claim": "http://marketingefficiencyconsultants.com/products-services/api-affiliate-program/",
-    "video": "http://marketingefficiencyconsultants.com/products-services/file2box-infusionsoft/",
-    "affiliate link": "http://marketingefficiencyconsultants.com/products-services/api-affiliate-program/",
-    "type": "Infusionsoft Add on tools",
-    "verticals": "Coach & consulting, Professional Services",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "iMember360",
-    "email": "imsupport@helpcenter360.com",
-    "short": "iMember360 is a WordPress membership plugin designed exclusively for Infusionsoft. In less than 5 minutes, it can turns any WordPress site into a full-fledged, high end membership site.",
-    "link": "https://marketplace.infusionsoft.com/listing/2285",
-    "price": "$57/m",
-    "discount": "Free to ICP",
-    "claim": "https://imember360.com/icp-imember360-registration/",
-    "type": "membership, Online, e learning, elearning, subscription",
-    "verticals": "Coach & consulting, Online Learning,",
-    "trial": "Yes",
-    "isthereavideo": " "
-  },
-  {
-    "name": "InfusedWoo",
-    "email": "support@infusedaddons.com",
-    "short": "Currently the best Woocommerce <-> Infusionsoft Integration. Create modern responsive e-commerce shops, and use Infusionsoft to automate.",
-    "link": "https://marketplace.infusionsoft.com/app/infusedwoo",
-    "price": "$159.00 - Single Site",
-    "discount": "30% discount",
-    "claim": "Send your ICP Marketplace URL and ICP email to support@infusedaddons.com and 30% coupon will be provided",
-    "video": "http://woo.infusedaddons.com",
-    "type": "Ecommerce, Infusionsoft Add on tools, Shipping",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Inpressto",
-    "email": "kevin@inpressto.com",
-    "short": "Sync Infusionsoft E-Commerce into WordPress - In 2 minutes you can have your entire Infusionsoft Storefront on your WordPress website! Quick, easy, no coding, load a plugin and it sync automatically. No SSL required and no complicated extra systems to maintain. Manage everything right inside Infusionsoft.",
-    "link": "https://marketplace.infusionsoft.com/listing/biz-x-tech-inpressto",
-    "price": "$37/m",
-    "discount": "Infusionsoft Certified Partners can get a fully functional Inpressto account for testing and demonstration purposes!",
-    "claim": "Fill out the form https://inpressto.com/icp/",
-    "type": "ecommerce, e, online, store",
-    "verticals": "Online store, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "InvoiceSync",
-    "email": "support@invoicesync.net",
-    "short": "Quickly and easily sync Infusionsoft invoices into Xero and QuickBooks Online",
-    "link": "https://marketplace.infusionsoft.com/listing/caldon-consulting-ltd-invoicesync",
-    "price": "$49/mo",
-    "discount": "Free during setup; one-off payment of $49 for lifetime access",
-    "claim": "Sign up via our messenger bot at http://invoicesync.net/icp",
-    "affiliate link": "Sign up via our messenger bot at http://invoicesync.net/icp",
-    "type": "Ecommerce, Infusionsoft Add on tools, Accounting",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Join By Text",
-    "email": "support@joinbytext.com",
-    "short": "Join By Text lets people subscribe to your Infusionsoft list anywhere they have their phone.",
-    "link": "https://marketplace.infusionsoft.com/listing/join-by-text-join-by-text",
-    "price": "$19/mo.",
-    "video": "https://marketplace.infusionsoft.com/listing/join-by-text-join-by-text",
-    "type": "Text, Infusionsoft Add on tools, Lead Gen, Email List Growth",
-    "verticals": "Coach & consulting, Offline Events and Marketing",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "JoomFuse",
-    "email": "dcassone@zacaw.com",
-    "short": "JoomFuse integrates Infusionsoft with Joomla websites",
-    "link": "https://marketplace.infusionsoft.com/listing/zacaw-enterprises-joomfuse",
-    "price": "$47/month or $467/year",
-    "discount": "$500 free JoomFuse implementation services for you or your client.",
-    "claim": "https://slamdunk.infusionsoft.com/app/form/joomfuse_icp_program",
-    "video": "https://youtu.be/ExP6MYnd2PE",
-    "affiliate link": "https://slamdunk.infusionsoft.com/app/form/joomfuse_icp_program",
-    "type": "Ecommerce, Membership",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "JoomFuse with JF Portal",
-    "email": "dcassone@zacaw.com",
-    "short": "Integrates Infusionsoft and eCommerce management with Joomla websites",
-    "link": "https://marketplace.infusionsoft.com/listing/zacaw-enterprises-joomfuse-with-jf-portal",
-    "price": "$67/month or $667/year",
-    "discount": "$500 of JoomFuse implementation services for you or your client",
-    "claim": "https://slamdunk.infusionsoft.com/app/form/joomfuse_icp_program",
-    "video": "https://youtu.be/ExP6MYnd2PE",
-    "affiliate link": "https://slamdunk.infusionsoft.com/app/form/joomfuse_icp_program",
-    "type": "Ecommerce, Membership",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Justuno",
-    "email": "ben@justuno.com",
-    "short": "Justuno is a suite of website conversion tools designed to build your email list and drive conversions that will grow your online business.",
-    "link": "https://marketplace.infusionsoft.com/listing/justuno-justuno",
-    "price": "Free up to 5,000 Visitors!",
-    "discount": "ICP20",
-    "claim": "Use ICP20 code at checkout and email mat@justuno.com for further details.",
-    "type": "Ecommerce, Infusionsoft Add on tools, Lead Gen",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": " "
-  },
-  {
-    "name": "LeadDyno",
-    "email": "brett@leaddyno.com",
-    "short": "Easy Affiliate (& Influencer) Marketing",
-    "link": "https://marketplace.infusionsoft.com/listing/leaddyno-llc-leaddyno-easy-affiliate-marketing",
-    "price": "from $49",
-    "discount": "Extended 30-day free trial",
-    "claim": "Email sales@leaddyno.com",
-    "video": "http://leaddyno.com/demo/",
-    "affiliate link": "http://leaddyno.leaddyno.com/affiliate",
-    "type": "Affiliate marketing",
-    "verticals": "Online store, Online Learning",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "LinkTrust",
-    "email": "bret@linktrust.com",
-    "short": "Referral & Affiliate Tracking App.  Reward your customers when they send you leads and sales!",
-    "link": "https://marketplace.infusionsoft.com/listing/linktrust-linktrust",
-    "price": "$99/m",
-    "discount": "FREE App for ICPs.  Plus, 50% discount for clients or $100/mo bonus for ICP.",
-    "claim": "Goto http://linktrust.com/icp or call 1-877-287-7822.",
-    "verticals": "Online store, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "LiveChat",
-    "email": "apps@livechatinc.com",
-    "short": "With the LiveChat/Infusionsoft integration, you can automatically move newly-converted prospects to Infusionsoft.",
-    "link": "https://marketplace.infusionsoft.com/listing/live-chat-inc.-livechat",
-    "price": "from $16/m",
-    "discount": "20% recurring commission ",
-    "claim": "Sign up for a LiveChat partner account. ",
-    "video": "https://www.youtube.com/watch?v=KXm7h2nf8Q0",
-    "affiliate link": "https://partners.livechatinc.com/",
-    "type": "Lead Gen, Customer Support",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "macanta",
-    "email": "hello@macanta.org",
-    "short": "Quickly and easily build role-specific interfaces to Infusionsoft. Plus give your clients access to an enterprise-level contact center",
-    "link": "https://marketplace.infusionsoft.com/listing/conquer-the-chaos-ltd-macanta",
-    "price": "from $39/m",
-    "discount": "100%, plus $25 credit towards phone calls and call recording",
-    "claim": "https://macanta.org/geticpmacanta",
-    "video": "https://www.youtube.com/watch?v=VZBSWHJD0jQ",
-    "type": "Infusionsoft Add on tools, Productivity, contact/engagement center",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Memberium | Build Membership Sites With WordPress & Infusionsoft",
-    "email": "andrew@memberium.com",
-    "short": "Memberium is the leading membership software for Infusionsoft and WordPress that’s used and trusted by top Infusionsoft users. ",
-    "link": "https://marketplace.infusionsoft.com/listing/memberium-memberium",
-    "price": "from $47/m",
-    "discount": "1 Free Lifetime License to Memberium for 1 Domain",
-    "claim": "Submit proof of your ICP status by filling out this web form: http://memberium.com/aff.php?p=infusionsoftpartners&w=memb-icp",
-    "video": "http://memberium.com/aff.php?p=infusionsoftpartners&w=memberium-demo",
-    "affiliate link": "http://memberium.com/aff.php?p=infusionsoftpartners&w=maf",
-    "type": "Ecommerce, Infusionsoft Add on tools, Membership",
-    "verticals": "Online store, Coach & consulting, Online Learning, Health and Fitness",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "mg",
-    "email": "trent@fixyourfunnel.com",
-    "short": "Automated and 2-way, live text messaging through local phone numbers. Track and capture leads by phone or text and record in Infusionsoft.",
-    "link": "https://marketplace.infusionsoft.com/listing/fix-your-funnel-fix-your-funnel-sms",
-    "price": "$49.00/mo to $124/mo",
-    "discount": "Free subscription, plus $20 in starting credits for just $1. Just pay for SMS/Phone minute usage.",
-    "claim": "Sing up for the $1 trial on our site, then web chat or call/text our support team at 760-621-8199 and let us know you created a free ICP account and we'll convert your account to a free subscription. You'll start off with $20 in ",
-    "video": "http://fixyourfunnel.com/blog/",
-    "affiliate link": "http://fixyourfunnel.com/blog/partner-with-us/",
-    "type": "Text, Infusionsoft Add on tools, Phone, Dialer",
-    "verticals": "Local services, Coach & consulting, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "MOBIT",
-    "email": "seanm@mobit.com",
-    "short": "Mobile Messaging and Marketing Automation Platform",
-    "link": "https://marketplace.infusionsoft.com/listing/mobit-mobit",
-    "price": "from $147/m",
-    "discount": "On application",
-    "claim": "Contact our team",
-    "video": "https://www.mobit.com/discover-sms-marketing-2",
-    "affiliate link": "https://www.mobit.com/mobit-affiliate",
-    "type": "Mobile Messaging and Marketing Automation",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services, Professional Speakers",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "MyFusion Helper",
-    "email": "team@myfusionsolutions.com",
-    "short": "Collection of 60+ integrations & Helpers for Campaign Builder - Google Sheets, Stripe, Gotowebinar, Twilio, Trello and dozens more!",
-    "link": "https://marketplace.infusionsoft.com/listing/myfusion-solutions-myfusion-helper",
-    "price": 39.95,
-    "discount": "FREE account for ICPs and ICCs, though limited to 5 active Helpers.",
-    "claim": "Use coupon code PCON15 at checkout and send email to the help@myfusionsolutions.com Helpdesk email with verification that you are an ICP (a screenprint of you in the ICP FB Group is sufficient) ",
-    "video": "http://myfusionhelper.com",
-    "affiliate link": "None.",
-    "type": "Infusionsoft Add on tools",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Nexus Merchants",
-    "email": "support@nexusmerchants.com",
-    "short": "Add Stripe or Braintree as a native merchant account inside of Infusionsoft, and unlock powerful Infusionsoft billing automation",
-    "link": "https://marketplace.infusionsoft.com/listing/information-street-limited-nexus-merchants",
-    "price": "$37/m",
-    "discount": "Contact support@informationstreet.com for incentives",
-    "claim": "Contact support@informationstreet.com for incentives",
-    "video": "www.nexusmerchants.com",
-    "affiliate link": "www.nexusmerchants.com",
-    "type": "Ecommerce, Infusionsoft Add on tools, Merchant Accounts",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Novak Solutions Campaign Tools",
-    "email": "info@novaksolutions.com",
-    "short": "Awesome tools for making your campaigns behave the way you need them to. Date Formatting, Field Math, Add-to-Calendar email links, 35+ tools",
-    "link": "https://marketplace.infusionsoft.com/listing/novak-solutions-campaign-tools-free-30-day-trial",
-    "price": 0,
-    "discount": "Entire suite for free",
-    "claim": "https://novaksolutions.com/partners",
-    "video": "https://novaksolutions.wistia.com/medias/yx975u46hu",
-    "type": "Infusionsoft Add on tools",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "OpenTracker",
-    "email": "hello@ideasquarelab.com",
-    "short": "Track email opens with a campaign builder \"Goal\". No more automation links for each email. Works with all type of emails",
-    "link": "https://marketplace.infusionsoft.com/listing/ismartcommerce-opentracker-track-target-leads-who-opened-the-email-and-who-did-not",
-    "price": "$12/m",
-    "discount": "Free for ICP",
-    "claim": "Place order using coupon ICPOT and send an email to hello@ideasquarelab.com",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Path",
-    "email": "david.adleman@chatpath.com",
-    "short": "Hybrid AI / Live Chat and messaging platform that engages web visitor, captures/routes leads and connects prospects with the right person.",
-    "link": "https://marketplace.infusionsoft.com/listing/chatpath-chatpath",
-    "price": "$79 per month",
-    "discount": "ICPs get a free Path account for 6 months for any partner that signs up by 3/31/18 - normally we provide a 14 day free trial.  We're also offering a 10% discount for any customer an Infusionsoft partner refers by 02/14/18.",
-    "claim": "ICP can sign up for their free 6 month account by going to https://dashboard.chatpath.com/onboarding/signup and entering the promo code:  INFUSIONSOFTPARTNER15",
-    "video": "https://www.chatpath.com/explainer-video/",
-    "affiliate link": "https://chatpath.leaddyno.com/",
-    "type": "Appointment Booking, Text, Lead Gen, chat",
-    "verticals": "Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "PicSnippets",
-    "email": "info@picsnippets.com",
-    "short": "Create automatic, personalized images for use in your marketing and sales.",
-    "link": "https://marketplace.infusionsoft.com/listing/picsnippets-picsnippets",
-    "price": "$20/m",
-    "discount": "Free",
-    "claim": "Send an email to info@picsnippets.com with the following: Your Full Name, Your Company Name, Your Email Address",
-    "type": "online, ecommerce, store, ",
-    "verticals": "Online store, Coach & consulting, Online Learning, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "PieSync",
-    "email": "laura@piesync.com",
-    "short": "PieSync integrates Infusionsoft with other apps for an intelligent and automatic 2-way contact sync.",
-    "link": "https://marketplace.infusionsoft.com/listing/piesync-piesync",
-    "price": "from $19",
-    "claim": "https://www.piesync.com/partner/expert/",
-    "video": "https://youtu.be/8_YjORH5DT8",
-    "affiliate link": "https://www.piesync.com/partner/expert/",
-    "type": "Infusionsoft Add on tools",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "PlusThis",
-    "email": "bryce@plusthis.com",
-    "short": "Add-on library of 50+ features including SMS, Webinar Connections, Facebook Syncing, Countdown Timers, A/B Split Testing and more.",
-    "link": "https://marketplace.infusionsoft.com/listing/plusthis-plusthis",
-    "price": "$79/m",
-    "discount": "ICP's get a FREE PlusThis account.",
-    "claim": "Just email ronnie@plusthis.com with your ICP# and we'll get you set up.",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Rocket One-Click",
-    "email": "support@infusedaddons.com",
-    "short": "Create modern and slick one-click upsell buttons in Wordpress. ",
-    "link": "https://marketplace.infusionsoft.com/listing/infused-addons-rocket-one-click",
-    "price": "$129.00 - Single Site",
-    "discount": "30% Off",
-    "claim": "Send your ICP Email and ICP marketplace link to support@infusedaddons.com and we will send you 30% discount coupon",
-    "video": "http://rocketoneclick.com",
-    "type": "Ecommerce",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Salesmsg",
-    "email": "chris@SalesMessage.com",
-    "short": "Salesmsg is a simple real-time two-way text messaging software giving Infusionsoft users a way to send & receive texts online.",
-    "link": "https://marketplace.infusionsoft.com/listing/salesmsg-salesmsg",
-    "price": 10,
-    "discount": "10% discount",
-    "claim": "Email support@SalesMessage.com with your ICP details",
-    "video": "https://www.SalesMessage.com",
-    "affiliate link": "https://www.salesmessage.com/partners",
-    "type": "Appointment Booking, Text, Lead Gen, Calling",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "ScheduleOnce",
-    "email": "dmitrik@scheduleonce.com",
-    "short": "ScheduleOnce is an online scheduling platform that works in tandem with Infusionsoft to help generate leads, increase sales, and save time.",
-    "link": "https://marketplace.infusionsoft.com/listing/scheduleonce-scheduleonce",
-    "price": "from $24/m",
-    "discount": "After a one-on-one meeting to determine whether a mutually beneficial business relationship can be established, a prospective partner will receive comprehensive training on how to use ScheduleOnce and set it up for others. At the completion of the training, partner will receive a Referral Link and be featured in our partner directory. Partner may also receive a complimentary account if he/she is able to demonstrate a proven capability of bringing in a large number of referrals. ",
-    "claim": "Email Dmitri dmitrik@scheduleonce.com with a brief summary of the following: Full name. Company. How long an ICP and any other professional credentials you have. A link to your website. A brief summary of what your business does and target market. A brief outline of how your company can bring more prospects to utilize ScheduleOnce for their scheduling needs. Any insight into how many customers you'd be able to refer in a given timeframe (annually or per quarter).",
-    "video": "http://help.scheduleonce.com/customer/en/portal/articles/2691161-video-intro-to-scheduleonce?b_id=15496",
-    "affiliate link": "https://www.scheduleonce.com/partners",
-    "type": "Appointment Booking",
-    "verticals": "Local services, Coach & consulting, Health and Fitness, Medical and Dental, Realestate, Professional Services, Any business that requires scheduling",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Scheduler Link",
-    "email": "support@mocknickapps.com",
-    "short": "Connector to integrate Acuity Scheduling with Infusionsoft. ",
-    "link": "https://marketplace.infusionsoft.com/listing/mocknick-apps-scheduler-link",
-    "price": "from $10/m",
-    "discount": "We are offering free subscriptions for ICPs. We are too small at this point to offer a discount. ",
-    "video": "https://youtu.be/n9iu2uMy3BM",
-    "type": "Appointment Booking",
-    "verticals": "Coach & consulting, Health and Fitness, Professional Services, Anyone who needs appointment. ",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "SegMetrics",
-    "email": "help@segmetrics.io",
-    "short": "SegMetrics gives you clarity on where your leads come from, what they buy, and how much your marketing and advertising are really worth.",
-    "link": "https://marketplace.infusionsoft.com/listing/segmetrics-audience-insights-with-powerful-marketing-analytics-segmetrics",
-    "price": "$27/m",
-    "discount": "15% off all agency accounts",
-    "claim": "Sign up for our affiliate program, or email us at help@segmetrics.io",
-    "video": "https://www.youtube.com/watch?v=Ne-yvcEwFoM",
-    "affiliate link": "https://segmetrics.leaddyno.com/",
-    "type": "Analytics",
-    "verticals": "Online store, Coach & consulting, Online Learning, Health and Fitness, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Speak2Leads",
-    "email": "sammy.james@speak2leads.com",
-    "short": "Immediate calls to Internet leads is essential to acquire more customers. As is optimum follow-up calls. We automate and track both.",
-    "link": "https://marketplace.infusionsoft.com/listing/speak2leads-speak2leads-automated-lead-response-follow-up",
-    "price": "$1.50 per activated lead",
-    "discount": 0.33,
-    "claim": "send request to: icpdiscount@speak2leads.com",
-    "video": "vimeo.com/86128379",
-    "type": "Infusionsoft Add on tools",
-    "verticals": "Local services, Coach & consulting, Health and Fitness, Medical and Dental, Realestate, Professional Services, Any product or service that requires a conversation with prospect",
-    "trial": "Yes",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Spiffy - Mobile-Optimized Order Forms",
-    "email": "support@gospiffy.com",
-    "short": "Mobile-Optimized & conversion-optimized Infusionsoft Order Forms. Boost order form conversions with our easy drag-and-drop builder.",
-    "link": "https://marketplace.infusionsoft.com/listing/spiffy-spiffy",
-    "price": "$50/m",
-    "discount": "Wholesale Program for 4+ accounts",
-    "claim": "Reach out to us by email: Support@GoSpiffy.com",
-    "video": "https://gospiffy.com/tour",
-    "affiliate link": "https://gospiffy.com/affiliates",
-    "type": "Ecommerce",
-    "verticals": "Coach & consulting, Online Learning, Professional Services, Static offers and Promotions",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Success Engine Apps",
-    "email": "developers@successengine.net",
-    "short": "A suite of 20+ apps and integrations for Infusionsoft that help customers get the most out of Infusionsoft.",
-    "link": "https://marketplace.infusionsoft.com/listing/success-engine-success-engine-apps",
-    "price": 35,
-    "discount": "Free",
-    "claim": "Just sign up at apps.successengine.net then email us stating you are an ICP of Infusionsoft. (no credit card is required)",
-    "video": "https://apps.successengine.net/#overview",
-    "type": "Appointment Booking, Ecommerce, Text, Infusionsoft Add on tools, Lead Gen, We can also build custom integrations for clients in our apps, (we do charge for development time)",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "Sync2CRM",
-    "email": "support@sync2crm.com",
-    "short": "We sync Facebook Leads and Custom Audiences with Infusionsoft tags and saved searches",
-    "link": "https://marketplace.infusionsoft.com/listing/sync2crm-sync2crm",
-    "price": "from $12/m",
-    "discount": "Free demo account for ICPs up to 2000 contacts",
-    "claim": "https://sync2crm.com/icp",
-    "type": "Facebook ad integration",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": " "
-  },
-  {
-    "name": "SyncEzy simPRO Infusionsoft Integration",
-    "email": "hari@syncezy.com",
-    "short": "SyncEzy connects Simpro with Infusionsoft, Use Infusionsoft for your marketing lead nurture and simPRO for Job / Quote Management.",
-    "link": "https://marketplace.infusionsoft.com/listing/3d-consulting-pty-ltd-syncezy-simpro-integration",
-    "price": 249,
-    "discount": 0.1,
-    "claim": "Contact us with a Referral ",
-    "affiliate link": "https://syncezy.com/simpro-infusionsoft-integration/",
-    "type": "Infusionsoft Add on tools, Accounting",
-    "verticals": "Local services, Professional Services, Trade Services",
-    "trial": "No",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Thankster",
-    "email": "infusionsoft@thankster.com",
-    "short": "Mail handwritten cards from within campaigns",
-    "link": "https://marketplace.infusionsoft.com/listing/thankster-thankster-handwritten-cards",
-    "price": "Approximately $2/card, including postage",
-    "discount": 0.2,
-    "claim": "Contact Us",
-    "affiliate link": "Contact Us",
-    "type": "Lead Gen, Customer retention",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services, brokers, non-profits",
-    "trial": "No",
-    "isthereavideo": " "
-  },
-  {
-    "name": "TimeFusion",
-    "email": "support@timefusion.biz",
-    "short": "Integrates the Timetrade online appointment setting service into Infusionsoft.",
-    "link": "https://marketplace.infusionsoft.com/listing/agency-automate-timefusion",
-    "price": "$4.95/m",
-    "discount": "Free account available to partners who sell Infusionsoft and/or offer Infusionsoft consulting services as a central part of their business. (a paid Timetrade account is required)",
-    "claim": "Send an email to support@timefusion.biz",
-    "type": "appointments, booking, schedule, ",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "turboDial",
-    "email": "support@turbodial.biz",
-    "short": "\"turboDial is a 2-way voice telephony and text messaging app\nthat adds a powerful suite of inside sales tools to Infusionsoft\nfor businesses that must use the phone to achieve sales.\"",
-    "link": "https://marketplace.infusionsoft.com/listing/agency-automate-turbodial",
-    "price": "$29.95/m",
-    "discount": "Free account available to partners who sell Infusionsoft and/or offer Infusionsoft consulting services as a central part of their business.  (a pay-per-use Twilio account is also required)",
-    "claim": "Send an email to support@turbodial.biz",
-    "type": "auto, dialer, phone, call, ",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "isthereavideo": " "
-  },
-  {
-    "name": "ViralSweep",
-    "email": "giancarlo@viralsweep.com",
-    "short": "ViralSweep is a marketing tool that allows you to build, run, and manage sweepstakes, contests, instant wins, and other promotions.",
-    "link": "https://marketplace.infusionsoft.com/listing/viralsweep-viralsweep",
-    "price": 199,
-    "discount": "30% recurring for affiliates",
-    "claim": "Sign up for our affiliate program",
-    "video": "https://www.viralsweep.com/training/",
-    "affiliate link": "https://viralsweep.tapfiliate.com/",
-    "type": "Lead Gen",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "WebMerge",
-    "email": "jeremy@webmerge.me",
-    "short": "WebMerge allows customers to automatically populate documents directly from Infusionsoft data",
-    "link": "https://marketplace.infusionsoft.com/listing/webmerge-webmerge",
-    "price": "from $29/m",
-    "discount": "We can offer a discount of 25% or referral fee of 25%",
-    "claim": "Reach out to support@webmerge.me",
-    "video": "https://support.webmerge.me/hc/en-us/articles/206526356-Infusionsoft",
-    "affiliate link": "https://www.webmerge.me/manage/account?page=referrals",
-    "type": "Doc Automation",
-    "verticals": "Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "WeDeliver.Email",
-    "email": "support@hq.wedeliver.email",
-    "short": "Route Infusionsoft emails via a third party such as Amazon SES, Send13, Mailgun, Sendgrid or SparkPost",
-    "link": "https://marketplace.infusionsoft.com/listing/caldon-consulting-ltd-wedeliver.email",
-    "price": "$149/m",
-    "discount": "$149/mo package discounted down to zero cost",
-    "claim": "Go to http://wedeliver.email/partners/",
-    "affiliate link": "http://wedeliver.email/partners/",
-    "type": "Infusionsoft Add on tools, Email",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "No",
-    "isthereavideo": " "
-  },
-  {
-    "name": "Wicked Reports",
-    "email": "support@wickedreports.com",
-    "short": "Maximize marketing ROI with playbooks that turn data into action",
-    "link": "https://marketplace.infusionsoft.com/listing/wicked-reports-wicked-reports",
-    "price": 199,
-    "discount": "No",
-    "claim": "n/a",
-    "video": "https://www.wickedreports.com/wicked-demo-recording/",
-    "affiliate link": "https://www.wickedreports.com/affiliates/",
-    "type": "Ecommerce, Lead Gen, Sales Tracking",
-    "verticals": "Online store, Coach & consulting, Online Learning, Health and Fitness",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "WP Fusion",
-    "email": "info@verygoodplugins.com",
-    "short": "WP Fusion connects WordPress and dozens of WordPress plugins to Infusionsoft.",
-    "link": "https://marketplace.infusionsoft.com/listing/very-good-plugins-wp-fusion",
-    "price": 247,
-    "discount": "Free",
-    "claim": "Contact support",
-    "video": "https://wpfusionplugin.com/videos/",
-    "affiliate link": "https://wpfusionplugin.com/affiliate-registration/",
-    "type": "Ecommerce, Membership, Lead Gen",
-    "verticals": "Online store, Coach & consulting, Online Learning",
-    "trial": "No",
-    "isthereavideo": "Video"
-  },
-  {
-    "name": "PlusThis",
-    "email": "ronnie@plusthis.com",
-    "short": "Library of 50+ top add-ons for small businesses using marketing automation software.",
-    "link": "https://marketplace.infusionsoft.com/listing/plusthis-plusthis",
-    "price": "$79/month",
-    "discount": "Free accounts for ICP's who join our affiliate program.",
-    "claim": "Email ronnie@plusthis.com",
-    "video": "https://plusthis.com/?wvideo=e11zce997k",
-    "affiliate link": "https://affiliates.plusthis.com",
-    "type": "Ecommerce, Text, Infusionsoft Add on tools, Lead Gen",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes"
-  },
-  {
-    "name": "SpamKill",
-    "email": "hello@ideasquarelab.com",
-    "short": "Prevent webform spam with 100% accuracy",
-    "link": "https://marketplace.infusionsoft.com/listing/ismartcommerce-spamkill-webform-spam-blocker-with-100-accuracy-w-o-captchas",
-    "price": "21/month",
-    "discount": "FREE (100% discount)",
-    "claim": "Apply coupon \"ICPSK\" on annual plan and contact support",
-    "affiliate link": "http://partners.ideasquarelab.com/affiliates/",
-    "type": "Lead Gen",
-    "verticals": "Online store, Local services, Coach & consulting, Online Learning, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "Yes"
-  },
-  {
-    "name": "Salesmsg",
-    "email": "chris@salesmessage.com",
-    "short": "Two-Way SMS and MMS Text Messaging for Infusionsoft",
-    "link": "https://marketplace.infusionsoft.com/listing/salesmsg-salesmsg",
-    "price": "$10/mo",
-    "discount": "Free Pro Account (Just pay for messages at discounted rate of $0.015/sms)",
-    "claim": "Email support@salesmessage.com and request the \"ICP Discount\" signup for $1 trial and get $20 in free messages.",
-    "affiliate link": "https://www.salesmessage.com/partners",
-    "type": "Text, Lead Gen",
-    "verticals": "Online store, Local services, Coach & consulting, Health and Fitness, Medical and Dental, Realestate, Professional Services",
-    "trial": "No"
-  }
-];
-</script>
-<script>
-// search function 
+// search function
 $(document).ready(function(){
 $.ajaxSetup({ cache: false });
 $('#search').keyup(function(){
@@ -1271,55 +127,55 @@ $.each(datajson, function(key, value){
 </div>\
     </li>');
     }
-   });   
+   });
  });
-    
-    
+
+
     $(document).ready(function($) {
-  $('#search').val(' ').trigger('keyup'); 
+  $('#search').val(' ').trigger('keyup');
 });
-    
+
     $(document).ready(function($) {
   $('#search').val('');
 });
-    
+
     //this makes the dropdown menu li populate the search field
-    
-    $('#myAllLink').click(function(){ 
-        $('#search').val(' '); 
-        $('#search').keyup(); 
+
+    $('#myAllLink').click(function(){
+        $('#search').val(' ');
+        $('#search').keyup();
     });
-    $('#myFitnessLink').click(function(){ 
-        $('#search').val('Health and fitness'); 
-        $('#search').keyup(); 
+    $('#myFitnessLink').click(function(){
+        $('#search').val('Health and fitness');
+        $('#search').keyup();
     });
-    $('#myStoreLink').click(function(){ 
-        $('#search').val('Online Store'); 
-        $('#search').keyup(); 
+    $('#myStoreLink').click(function(){
+        $('#search').val('Online Store');
+        $('#search').keyup();
     });
-    $('#myServicesLink').click(function(){ 
-        $('#search').val('Local Services'); 
-        $('#search').keyup(); 
+    $('#myServicesLink').click(function(){
+        $('#search').val('Local Services');
+        $('#search').keyup();
     });
-    $('#myLerningLink').click(function(){ 
-        $('#search').val('Online Learning'); 
-        $('#search').keyup(); 
+    $('#myLerningLink').click(function(){
+        $('#search').val('Online Learning');
+        $('#search').keyup();
     });
-    $('#myConsultingLink').click(function(){ 
-        $('#search').val('Consulting'); 
-        $('#search').keyup(); 
+    $('#myConsultingLink').click(function(){
+        $('#search').val('Consulting');
+        $('#search').keyup();
     });
-    $('#myMedicalLink').click(function(){ 
-        $('#search').val('Medical and Dental'); 
-        $('#search').keyup(); 
+    $('#myMedicalLink').click(function(){
+        $('#search').val('Medical and Dental');
+        $('#search').keyup();
     });
-    $('#myRealestateLink').click(function(){ 
-        $('#search').val('Realestate'); 
-        $('#search').keyup(); 
+    $('#myRealestateLink').click(function(){
+        $('#search').val('Realestate');
+        $('#search').keyup();
     });
-    $('#myProfessionalLink').click(function(){ 
-        $('#search').val('Professional Services'); 
-        $('#search').keyup(); 
-        }); 
-    }); 
+    $('#myProfessionalLink').click(function(){
+        $('#search').val('Professional Services');
+        $('#search').keyup();
+        });
+    });
 </script>
