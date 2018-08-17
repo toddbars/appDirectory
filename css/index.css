@@ -21,6 +21,12 @@ font-size: 25px;
 text-align: left;
 }
 
+.h2{
+  color: #4F5EB8;
+ font-size: 18px;
+
+}
+
 #result a{
 color: #4F5EB8;
 }
