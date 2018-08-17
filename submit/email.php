@@ -1,12 +1,35 @@
 <?php
  $to = 'todd.barsalou@infusionsoft.com';
- $subject = "An Infusionsoft customer needs your help, you're our only hope! May the Fourth be with you!";
  $name = $_POST['name'];
- $phone = $_POST['phone'];
  $email = $_POST['email'];
- $message = $_POST['message'];
+ $short = $_POST['short'];
+ $link = $_POST['link'];
+ $price = $_POST['price'];
+ $discount = $_POST['discount'];
+ $claim = $_POST['claim'];
+ $video = $_POST['video'];
+ $affiliateLink = $_POST['affiliatelink'];
+ $type = $_POST['type'];
+ $verticals = $_POST['vertivals'];
+ $trial = $_POST['trial'];
+ $isThereAVideo = $_POST['isthereavideo'];
  $from = $_POST['email'];
- $res = mail($to, $subject, "\n Name: ".$name ."\n Phone: ".$phone ."\n".$message, "From: $from");
+ $subject = " New Developer entry for app directory";
+ $res = mail($to, $subject, "{ \n
+              \"name\": \"".$name."\", \n
+              \"email\": \"".$email."\",\n
+              \"short\": \"".$short."\",\n
+              \"link\": \"".$link."\",\n
+              \"price\": \"".$price."\",\n
+              \"discount\": \"".$discount."\",\n
+              \"claim\": \"".$claim."\",\n
+              \"video\": \"".$video."\",\n
+              \"affiliiate link\": \"".$affiliateLink."\",\n
+              \"type\": \"".$type."\",\n
+              \"verticals\": \"".$verticals."\",\n
+              \"trial\": \"".$trial."\",\n
+              \"isthereavideo\": \"".$isThereAVideo."\",\n
+                              },", "From: $from");
  if (!$res)
    die('email failed');
  else
