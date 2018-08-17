@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGXMPRS');</script>
+        <!-- End Google Tag Manager -->
+
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110721359-1"></script>
+          <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-110721359-1');
+        </script>
+          <title>Infusionsoft Integrations | Search for new apps </title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="../json/appInfo.json"></script>
+          <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+     <div class="banner">
+     <img id="logo" src="../images/logo.png">
+     </div>
+  <div class="container" style="width:80%;">
+
+      <div class="row">
+          <div class="col-md-5" style="padding-top:100px;">
+              <div id="title">
+                <h2 align="left">Submit your listing</h2>
+                <!-- Dropdown menu -->
+             </div>
+        </div>
+         <!-- searchbar -->
+        <div class="col-md-7" style="padding-top:100px; padding-bottom: 200px;">
+                <form action="email.php" method="post" onSubmit="MM_validateForm('name','','R','phone','','R','model','','R','email','','RisEmail');return document.MM_returnValue">
+                <p class="body">Your name:<br> <input name="name" type="text" id="name" size="50" class="form-control"/></p>
+                <p>Your email: <br><input name="email" type="email" id="email" size="50" class="form-control"/></p>
+                <p>
+                      <span class="body"> Short Description:</span><br />
+                      <textarea name="short" id="short" rows="5" cols="48" class="form-control" maxlength="700"></textarea>
+                </p>
+                <p class="body">Link to marketplace listing:<br> <input name="link" type="text" id="link" size="50" class="form-control"/></p>
+                <p class="body">Price of integration:<br> <input name="price" type="text" id="price" size="50" class="form-control"/></p>
+                <p class="body">Discount offer for Infusionsoft Partners:<br> <input name="discount" type="text" id="discount" size="50" class="form-control"/></p>
+                <p class="body">How to claim ICP Discount:<br> <input name="claim" type="text" id="claim" size="50" class="form-control"></p>
+                <p class="body">Link to demo video:<br> <input name="video" type="text" id="video" size="50" class="form-control"/></p>
+                <p class="body">Link to Affiliate program:<br> <input name="affiliatelink" type="text" id="affiliatelink" size="50" class="form-control"/></p>
+                <p class="body">Do you offer a free trial or freemium version?<br> <input name="trial" type="text" id="trial" size="50" class="form-control"/></p>
+
+                <div class="form-group">
+                  <label class="body">Type of integration:</label>
+                                <select multiple class="form-control" id="type">
+                                  <option>Appointment Booking</option>
+                                  <option>Ecommerce</option>
+                                  <option>Texting</option>
+                                  <option>Infusionsoft Add on tools</option>
+                                  <option>Membership</option>
+                                  <option>Lead Gen</option>
+                                  <option>Accounting</option>
+                                  <option>Shipping</option>
+                                  <option>Other</option>
+                                </select>
+                </div>
+                <div class="form-group">
+                <label class="body">Verticals:</label>
+                              <select multiple class="form-control" id="verticals" >
+                                <option>Online store</option>
+                                <option>Local services</option>
+                                <option>Coach & consulting</option>
+                                <option>Online Learning</option>
+                                <option>Health and Fitness</option>
+                                <option>Medical and Dental</option>
+                                <option>Realestate</option>
+                                <option>Professional Services</option>
+                                <option>Other</option>
+                              </select>
+              </div>
+
+        <!--        <p class="body">Type of integration:<br> <input name="video" type="text" id="video" size="50" /></p> -->
+        <!--        <p class="body">Verticals:<br> <input name="vertivals" type="text" id="vertivals" size="50" /></p> -->
+                <p>
+                      <br>
+                       <input type="submit" value="Submit Request" class="btn btn-primary"/>
+                    </p>
+                  </form>
+        </div>
+      </div>
+    </div>
+    <!-- leave feedback button -->
+    <a href="https://goo.gl/forms/lJNmNxPdo4UbOWMB3" target="_blank"> <button type="button" class="btn btn-primary" style="position: fixed; position: fixed; bottom: 5px; right: 10px; ">Leave feedback</button></a>
+      </div>
+    </div>
+</body>
+</html>
