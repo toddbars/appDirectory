@@ -9,8 +9,12 @@
  $claim = $_POST['claim'];
  $video = $_POST['video'];
  $affiliateLink = $_POST['affiliatelink'];
- $type = $_POST['type'];
- $verticals = $_POST['verticals'];
+ $type = $_POST['type[]'];
+ //$verticals = $_POST['verticals[]'];
+ $new  = "";
+ foreach ($_POST['verticals'] as $verticalsPrint)
+    $new = $new.$verticalsPrint.", ";
+ //$stringvert = rtrim(implode(',', $verticals), ',');
  $trial = $_POST['trial'];
  $isThereAVideo = $_POST['isthereavideo'];
  $from = $_POST['email'];
@@ -26,13 +30,15 @@
               \"video\": \"".$video."\",\n
               \"affiliiate link\": \"".$affiliateLink."\",\n
               \"type\": \"".$type."\",\n
-              \"verticals\": \"".$verticals."\",\n
+              \"verticals\": \"".$new."\",\n
               \"trial\": \"".$trial."\",\n
               \"isthereavideo\": \"".$isThereAVideo."\",\n
                               },", "From: $from");
- if (!$res)
+
+
+if (!$res)
    die('email failed');
- else
-   header('Location: http://www.startinfusionsoft.com/partners');
+else
+ header('Location: http://www.startinfusionsoft.com/partners');
 
 ?>
