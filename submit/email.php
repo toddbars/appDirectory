@@ -9,11 +9,15 @@
  $claim = $_POST['claim'];
  $video = $_POST['video'];
  $affiliateLink = $_POST['affiliatelink'];
- $type = $_POST['type[]'];
+ $typeVar = "";
+ foreach ($_POST['type'] as $typePrint)
+    $typeVar= $typeVar.$typePrint.", ";
+
+ //$type = $_POST['type[]'];
  //$verticals = $_POST['verticals[]'];
- $new  = "";
+ $verticalsVar  = "";
  foreach ($_POST['verticals'] as $verticalsPrint)
-    $new = $new.$verticalsPrint.", ";
+    $verticalsVar= $verticalsVar.$verticalsPrint.", ";
  //$stringvert = rtrim(implode(',', $verticals), ',');
  $trial = $_POST['trial'];
  $isThereAVideo = $_POST['isthereavideo'];
@@ -29,8 +33,8 @@
               \"claim\": \"".$claim."\",\n
               \"video\": \"".$video."\",\n
               \"affiliiate link\": \"".$affiliateLink."\",\n
-              \"type\": \"".$type."\",\n
-              \"verticals\": \"".$new."\",\n
+              \"type\": \"".$typeVar."\",\n
+              \"verticals\": \"".$verticalsVar."\",\n
               \"trial\": \"".$trial."\",\n
               \"isthereavideo\": \"".$isThereAVideo."\",\n
                               },", "From: $from");
