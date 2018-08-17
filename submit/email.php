@@ -10,7 +10,7 @@
  $video = $_POST['video'];
  $affiliateLink = $_POST['affiliatelink'];
  $type = $_POST['type'];
- $verticals = $_POST['vertivals'];
+ $verticals = $_POST['verticals'];
  $trial = $_POST['trial'];
  $isThereAVideo = $_POST['isthereavideo'];
  $from = $_POST['email'];

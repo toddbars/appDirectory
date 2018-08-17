@@ -44,7 +44,7 @@
          <!-- searchbar -->
         <div class="col-md-7" style="padding-top:100px; padding-bottom: 200px;">
                 <form action="email.php" method="post" onSubmit="MM_validateForm('name','','R','phone','','R','model','','R','email','','RisEmail');return document.MM_returnValue">
-                <p class="h2">Your name:<br> <input name="name" type="text" id="name" size="50" class="form-control"/></p>
+                <p class="h2">Company name:<br> <input name="name" type="text" id="name" size="50" class="form-control"/></p>
                 <p class="h2">Your email: <br><input name="email" type="email" id="email" size="50" class="form-control"/></p>
                 <p>
                       <span class="h2"> Short Description:</span><br />
@@ -60,7 +60,7 @@
 
                 <div class="form-group">
                   <label class="h2">Type of integration:</label>
-                                <select multiple class="form-control" id="type">
+                                <select multiple class="form-control" id="type" name="type">
                                   <option>Appointment Booking</option>
                                   <option>Ecommerce</option>
                                   <option>Texting</option>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="form-group">
                 <label class="h2">Verticals:</label>
-                              <select multiple class="form-control" id="verticals" >
+                              <select multiple class="form-control" id="verticals" name="verticals">
                                 <option>Online store</option>
                                 <option>Local services</option>
                                 <option>Coach & consulting</option>
